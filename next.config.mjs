@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === "production";
 const nextConfig = {
   output: "export",
   basePath: "/webstudio-next",
@@ -7,7 +8,9 @@ const nextConfig = {
     loader: "akamai",
     path: "",
   },
-  //   assetPrefix: "./",
+  assetPrefix: isProd
+    ? "https://anatoliitrehub.github.io/webstudio-next"
+    : undefined,
 };
 
 export default nextConfig;
