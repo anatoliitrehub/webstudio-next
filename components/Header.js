@@ -7,7 +7,7 @@ const Header = () => {
       <header className="header">
         <div className="header__wrapper container">
           <nav className="header__nav">
-            <Link className="header__logo" href="/">
+            <Link className="header__logo" href="/" replace>
               <span className="header__logo--start">Web</span>
               <span className="header__logo--end">Studio</span>
             </Link>
