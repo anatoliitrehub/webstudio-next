@@ -84,17 +84,17 @@ const Team = () => {
             <picture>
               <source
                 className="team__photo"
-                srcSet="./images/imgolha_mob.jpg"
+                srcSet="../public/images/imgolha_mob.jpg"
                 media="(max-width: 767px)"
               />
               <source
                 className="team__photo"
-                srcSet="./images/imgolha_tab.jpg"
+                srcSet="../public/images/imgolha_tab.jpg"
                 media="(max-width: 1199px)"
               />
               <img
                 className="team__photo"
-                src="./images/imgolha.jpg"
+                src="../public/images/imgolha.jpg"
                 alt="Ольга Рєпіна"
               />
             </picture>

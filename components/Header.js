@@ -19,7 +19,7 @@ const Header = () => {
                 aria-controls="mobile-menu"
               >
                 <svg className="mobmenu__open">
-                  <use href="./images/icons.svg#icon-menu"></use>
+                  <use href="../public/images/icons.svg#icon-menu"></use>
                 </svg>
               </button>
             </div>
@@ -46,7 +46,7 @@ const Header = () => {
             <li>
               <a className="header__mail" href="mailto:info@devstudio.com">
                 <svg className="header__icomail">
-                  <use xlinkHref="/images/icons.svg#envelope"></use>
+                  <use href="../public/images/icons.svg#envelope"></use>
                 </svg>
                 info@devstudio.com
               </a>
