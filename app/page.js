@@ -1,8 +1,21 @@
 // import Image from 'next/image'
+import Clients from "@/components/Clients";
+import Employments from "@/components/Employments";
+import Hero from "@/components/Hero";
+import Principles from "@/components/Principles";
+import Team from "@/components/Team";
 import React from "react";
 
 export default function Home() {
-  return <h1>Studio</h1>;
+  return (
+    <>
+      <Hero />
+      <Principles />
+      <Employments />
+      <Team />
+      <Clients />
+    </>
+  );
 }
 
 {

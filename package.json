@@ -13,9 +13,11 @@
   "dependencies": {
     "autoprefixer": "10.4.14",
     "next": "13.4.4",
+    "next-svg-sprite": "^0.3.0",
     "postcss": "8.4.24",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "svg-sprite-loader": "^6.0.11",
     "tailwindcss": "3.3.2"
   }
 }

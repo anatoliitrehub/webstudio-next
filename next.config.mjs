@@ -3,10 +3,11 @@ const nextConfig = {
   output: "export",
   basePath: "/webstudio-next",
   images: {
+    unoptimized: true,
     loader: "akamai",
     path: "",
   },
-  assetPrefix: "./",
+  //   assetPrefix: "./",
 };
 
 export default nextConfig;

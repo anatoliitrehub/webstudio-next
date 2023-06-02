@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
-// import "./globals.css";
+import "./globals.css";
+// import favicon from "./favicon.ico";
 // import { Inter } from "next/font/google";
 import { Footer } from "@/components/Footer";
 

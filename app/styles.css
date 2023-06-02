@@ -1,40 +1,19 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+/* --------  common styles  --------- */
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-  --color-active: #2196F3;
+    --color-active: #2196F3;
     --primary-white-color: #ffffff;
     --main-text-color: #212121;
     --secondary-text-color: #757575;
     --tra: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
-
 body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  color: var(--main-text-color);
-  letter-spacing: 0.03em;
-  background-color: var(--primary-white-color);
-  /* color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--main-text-color);
+    letter-spacing: 0.03em;
+    background-color: var(--primary-white-color);
 }
 
 h1,
@@ -362,7 +341,7 @@ img {
     background-color: #2F303A;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../public/images/main_Img.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main_Img.jpg);
     background-repeat: no-repeat;
     background-position: center;
 }
