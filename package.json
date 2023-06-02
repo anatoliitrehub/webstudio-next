@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "autoprefixer": "10.4.14",
-    "next": "13.4.4",
+    "next": "^13.2.3",
     "next-svg-sprite": "^0.3.0",
     "postcss": "8.4.24",
     "react": "18.2.0",
