@@ -1,11 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
+  basePath: "/webstudio-next",
   images: {
     loader: "akamai",
     path: "",
   },
-  assetPrefix: "./webstudio-next",
+  assetPrefix: "./",
 };
 
 export default nextConfig;
