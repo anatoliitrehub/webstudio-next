@@ -11,9 +11,7 @@ const nextConfig = {
     loader: "akamai",
     path: "/",
   },
-  assetPrefix: isProd
-    ? "https://anatoliitrehub.github.io/webstudio-next"
-    : undefined,
+  assetPrefix: isProd ? "https://anatoliitrehub.github.io" : undefined,
 };
 
 export default nextConfig;
