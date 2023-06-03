@@ -1,8 +1,20 @@
+import Link from "next/link";
+import { DataContext } from "./DataContext";
+import { useContext } from "react";
+import { usePathname } from "next/navigation";
+
 const MobileMenu = () => {
+  const { mobileOpen, mobileIsOpen } = useContext(DataContext);
+  const currentPath = usePathname();
+  const stateClass =
+    "menu-container " + "js-menu-container " + (mobileOpen ? "is-open" : "");
   return (
     <>
-      <div className="menu-container js-menu-container" id="mobile-menu">
-        <button className="menu-toggle js-close-menu">
+      <div className={stateClass} id="mobile-menu">
+        <button
+          onClick={() => mobileIsOpen(false)}
+          className="menu-toggle js-close-menu"
+        >
           <svg width="40" height="40">
             <use href="./images/icons.svg#mobmenu-close"></use>
           </svg>
@@ -10,19 +22,35 @@ const MobileMenu = () => {
 
         <ul className="mobile__menu">
           <li>
-            <a href="./index.html" className="mobile__link current">
+            <Link
+              href="/"
+              className={`mobile__link ${currentPath == "/" && "current"}`}
+              onClick={() => mobileIsOpen(false)}
+            >
               Студія
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="./portfolio.html" className="mobile__link">
+            <Link
+              href="/portfolio"
+              className={`mobile__link ${
+                currentPath == "/portfolio" && "current"
+              }`}
+              onClick={() => mobileIsOpen(false)}
+            >
               Портфоліо
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="./contacts.html" className="mobile__link">
+            <Link
+              href="/contacts"
+              className={`mobile__link ${
+                currentPath == "/contacts" && "current"
+              }`}
+              onClick={() => mobileIsOpen(false)}
+            >
               Контакти
-            </a>
+            </Link>
           </li>
         </ul>
         <div className="mobile__wrap">

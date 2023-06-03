@@ -1,14 +1,28 @@
+import { DataContext } from "./DataContext";
+import { useContext } from "react";
+
 const ModalForm = () => {
+  const { modalOpen, modalIsOpen } = useContext(DataContext);
+  const stateWindow = "backdrop " + (!modalOpen ? "is-hidden" : "");
+
+  const modalClose = () => {
+    modalIsOpen(false);
+  };
   return (
-    <div className="backdrop is-hidden" data-modal>
+    <div className={stateWindow} data-modal>
       <div className="modal">
-        <button type="button" className="modal__close--btn" data-modal-close>
+        <button
+          onClick={() => modalClose()}
+          type="button"
+          className="modal__close--btn"
+          data-modal-close
+        >
           <svg className="modal__close--icon">
             <use href="/images/icons.svg#icon-close"></use>
           </svg>
         </button>
         <p className="modal__title">Залиште свої дані, ми вам передзвонимо</p>
-        <form className="modalform">
+        <form className="modalform" onSubmit={modalClose}>
           <div className="formfield">
             <label className="formfield__name" htmlFor="user-name">
               Ім'я

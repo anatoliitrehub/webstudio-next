@@ -1,7 +1,12 @@
 import Link from "next/link";
 // import icons from "../public/images/icons.svg";
+import { DataContext } from "./DataContext";
+import { useContext } from "react";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
+  const { mobileIsOpen } = useContext(DataContext);
+  const currentPath = usePathname();
   return (
     <>
       <header className="header">
@@ -14,6 +19,7 @@ const Header = () => {
 
             <div className="header__mobmenu js-open-menu">
               <button
+                onClick={() => mobileIsOpen(true)}
                 className="menu-toggle js-open-menu"
                 aria-expanded="false"
                 aria-controls="mobile-menu"
@@ -26,17 +32,38 @@ const Header = () => {
 
             <ul className="header__pages">
               <li>
-                <Link href="/" className="header__sheet--current">
+                <Link
+                  href="/"
+                  className={
+                    currentPath === "/"
+                      ? "header__sheet--current"
+                      : "header__sheet"
+                  }
+                >
                   Студія
                 </Link>
               </li>
               <li>
-                <Link href="/portfolio" className="header__sheet">
+                <Link
+                  href="/portfolio"
+                  className={
+                    currentPath === "/portfolio"
+                      ? "header__sheet--current"
+                      : "header__sheet"
+                  }
+                >
                   Портфоліо
                 </Link>
               </li>
               <li>
-                <Link href="/contacts" className="header__sheet">
+                <Link
+                  href="/contacts"
+                  className={
+                    currentPath === "/contacts"
+                      ? "header__sheet--current"
+                      : "header__sheet"
+                  }
+                >
                   Контакти
                 </Link>
               </li>
