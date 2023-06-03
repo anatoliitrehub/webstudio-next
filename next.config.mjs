@@ -7,9 +7,9 @@ const nextConfig = {
   output: "export",
   basePath: "/webstudio-next",
   images: {
-    unoptimized: true,
+    // unoptimized: true,
     loader: "akamai",
-    path: "/",
+    path: "",
   },
   assetPrefix: isProd ? "https://anatoliitrehub.github.io" : undefined,
 };
