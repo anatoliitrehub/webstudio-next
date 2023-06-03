@@ -19,7 +19,7 @@ const Header = () => {
                 aria-controls="mobile-menu"
               >
                 <svg className="mobmenu__open">
-                  <use href="../public/images/icons.svg#icon-menu"></use>
+                  <use href="/images/icons.svg#icon-menu"></use>
                 </svg>
               </button>
             </div>
@@ -46,7 +46,7 @@ const Header = () => {
             <li>
               <a className="header__mail" href="mailto:info@devstudio.com">
                 <svg className="header__icomail">
-                  <use href="../public/images/icons.svg#envelope"></use>
+                  <use href="./images/icons.svg#envelope"></use>
                 </svg>
                 info@devstudio.com
               </a>
@@ -54,7 +54,7 @@ const Header = () => {
             <li>
               <a className="header__tel" href="tel:+380961111111">
                 <svg className="header__icotel">
-                  <use href="/images/icons.svg#smartphone"></use>
+                  <use href="./images/icons.svg#smartphone"></use>
                 </svg>
                 +38 096 111 11 11
               </a>

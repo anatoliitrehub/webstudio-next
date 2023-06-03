@@ -1,7 +1,7 @@
 import Image from "next/image";
-import ihorMob from "../public/images/imgihor_mob.jpg";
-import ihorTabl from "../public/images/imgihor_tab.jpg";
-import ihorDesk from "../public/images/imgihor.jpg";
+// import ihorMob from "../public/images/imgihor_mob.jpg";
+// import ihorTabl from "../public/images/imgihor_tab.jpg";
+// import ihorDesk from "../public/images/imgihor.jpg";
 // import images from "../public/images/icons.svg";
 
 const Team = () => {
@@ -14,18 +14,20 @@ const Team = () => {
             <picture>
               <source
                 className="team__photo"
-                srcSet={ihorMob}
+                srcSet="/images/imgihor_mob.jpg"
                 media="(max-width: 767px)"
               />
               <source
                 className="team__photo"
-                srcSet={ihorTabl}
+                srcSet="/images/imgihor_tab.jpg"
                 media="(max-width: 1199px)"
               />
               <Image
                 className="team__photo"
-                src={ihorDesk}
+                src="/images/imgihor.jpg"
                 alt="Ігор Дем'яненко"
+                width="270"
+                height="260"
               />
             </picture>
 
@@ -40,7 +42,7 @@ const Team = () => {
                     title="лінка на інсту"
                   >
                     <svg className="soc__link">
-                      <use href="./images/icons.svg#instagram2"></use>
+                      <use href="/images/icons.svg#instagram2"></use>
                     </svg>
                   </a>
                 </li>
@@ -51,7 +53,7 @@ const Team = () => {
                     title="лінка на твітер"
                   >
                     <svg className="soc__link">
-                      <use href="./images/icons.svg#twitter1"></use>
+                      <use href="/images/icons.svg#twitter1"></use>
                     </svg>
                   </a>
                 </li>
@@ -62,7 +64,7 @@ const Team = () => {
                     title="лінка на фейсбук"
                   >
                     <svg className="soc__link">
-                      <use href="./images/icons.svg#facebook1"></use>
+                      <use href="/images/icons.svg#facebook1"></use>
                     </svg>
                   </a>
                 </li>
@@ -73,7 +75,7 @@ const Team = () => {
                     title="лінка на лінкедін"
                   >
                     <svg className="soc__link">
-                      <use href="./images/icons.svg#linkedin1"></use>
+                      <use href="/images/icons.svg#linkedin1"></use>
                     </svg>
                   </a>
                 </li>
@@ -84,18 +86,20 @@ const Team = () => {
             <picture>
               <source
                 className="team__photo"
-                srcSet="../public/images/imgolha_mob.jpg"
+                srcSet="/images/imgolha_mob.jpg"
                 media="(max-width: 767px)"
               />
               <source
                 className="team__photo"
-                srcSet="../public/images/imgolha_tab.jpg"
+                srcSet="/images/imgolha_tab.jpg"
                 media="(max-width: 1199px)"
               />
-              <img
+              <Image
                 className="team__photo"
-                src="../public/images/imgolha.jpg"
+                src="/images/imgolha.jpg"
                 alt="Ольга Рєпіна"
+                width={270}
+                height={260}
               />
             </picture>
 
@@ -110,7 +114,7 @@ const Team = () => {
                     title="лінка на інсту"
                   >
                     <svg className="soc__link">
-                      <use href="./images/icons.svg#instagram2"></use>
+                      <use href="/images/icons.svg#instagram2"></use>
                     </svg>
                   </a>
                 </li>
@@ -121,7 +125,7 @@ const Team = () => {
                     title="лінка на твітер"
                   >
                     <svg className="soc__link">
-                      <use href="./images/icons.svg#twitter1"></use>
+                      <use href="/images/icons.svg#twitter1"></use>
                     </svg>
                   </a>
                 </li>
@@ -132,7 +136,7 @@ const Team = () => {
                     title="лінка на фейсбук"
                   >
                     <svg className="soc__link">
-                      <use href="./images/icons.svg#facebook1"></use>
+                      <use href="/images/icons.svg#facebook1"></use>
                     </svg>
                   </a>
                 </li>
@@ -143,7 +147,7 @@ const Team = () => {
                     title="лінка на лінкедін"
                   >
                     <svg className="soc__link">
-                      <use href="./images/icons.svg#linkedin1"></use>
+                      <use href="/images/icons.svg#linkedin1"></use>
                     </svg>
                   </a>
                 </li>
@@ -154,18 +158,20 @@ const Team = () => {
             <picture>
               <source
                 className="team__photo"
-                srcSet="./images/imgmykola_mob.jpg"
+                srcSet="/images/imgmykola_mob.jpg"
                 media="(max-width: 767px)"
               />
               <source
                 className="team__photo"
-                srcSet="./images/imgmykola_tab.jpg"
+                srcSet="/images/imgmykola_tab.jpg"
                 media="(max-width: 1199px)"
               />
-              <img
+              <Image
                 className="team__photo"
-                src="./images/imgmykola.jpg"
+                src="/images/imgmykola.jpg"
                 alt="Микола Тарасов"
+                width={270}
+                height={260}
               />
             </picture>
 
@@ -180,7 +186,7 @@ const Team = () => {
                     title="лінка на інсту"
                   >
                     <svg className="soc__link">
-                      <use href="./images/icons.svg#instagram2"></use>
+                      <use href="/images/icons.svg#instagram2"></use>
                     </svg>
                   </a>
                 </li>
@@ -191,7 +197,7 @@ const Team = () => {
                     title="лінка на твітер"
                   >
                     <svg className="soc__link">
-                      <use href="./images/icons.svg#twitter1"></use>
+                      <use href="/images/icons.svg#twitter1"></use>
                     </svg>
                   </a>
                 </li>
@@ -202,7 +208,7 @@ const Team = () => {
                     title="лінка на фейсбук"
                   >
                     <svg className="soc__link">
-                      <use href="./images/icons.svg#facebook1"></use>
+                      <use href="/images/icons.svg#facebook1"></use>
                     </svg>
                   </a>
                 </li>
@@ -213,7 +219,7 @@ const Team = () => {
                     title="лінка на лінкедін"
                   >
                     <svg className="soc__link">
-                      <use href="./images/icons.svg#linkedin1"></use>
+                      <use href="/images/icons.svg#linkedin1"></use>
                     </svg>
                   </a>
                 </li>
@@ -224,18 +230,20 @@ const Team = () => {
             <picture>
               <source
                 className="team__photo"
-                srcSet="./images/imgmykhailo_mob.jpg"
+                srcSet="/images/imgmykhailo_mob.jpg"
                 media="(max-width: 767px)"
               />
               <source
                 className="team__photo"
-                srcSet="./images/imgmykhailo_tab.jpg"
+                srcSet="/images/imgmykhailo_tab.jpg"
                 media="(max-width: 1199px)"
               />
-              <img
+              <Image
                 className="team__photo"
-                src="./images/imgmykhailo.jpg"
+                src="/images/imgmykhailo.jpg"
                 alt="Михайло Єрмаков"
+                width={270}
+                height={294}
               />
             </picture>
 
@@ -250,7 +258,7 @@ const Team = () => {
                     title="лінка на інсту"
                   >
                     <svg className="soc__link">
-                      <use href="./images/icons.svg#instagram2"></use>
+                      <use href="/images/icons.svg#instagram2"></use>
                     </svg>
                   </a>
                 </li>
@@ -261,7 +269,7 @@ const Team = () => {
                     title="лінка на твітер"
                   >
                     <svg className="soc__link">
-                      <use href="./images/icons.svg#twitter1"></use>
+                      <use href="/images/icons.svg#twitter1"></use>
                     </svg>
                   </a>
                 </li>
@@ -272,7 +280,7 @@ const Team = () => {
                     title="лінка на фейсбук"
                   >
                     <svg className="soc__link">
-                      <use href="./images/icons.svg#facebook1"></use>
+                      <use href="/images/icons.svg#facebook1"></use>
                     </svg>
                   </a>
                 </li>
@@ -283,7 +291,7 @@ const Team = () => {
                     title="лінка на лінкедін"
                   >
                     <svg className="soc__link">
-                      <use href="./images/icons.svg#linkedin1"></use>
+                      <use href="/images/icons.svg#linkedin1"></use>
                     </svg>
                   </a>
                 </li>

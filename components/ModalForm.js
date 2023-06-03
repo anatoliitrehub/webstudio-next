@@ -4,13 +4,13 @@ const ModalForm = () => {
       <div className="modal">
         <button type="button" className="modal__close--btn" data-modal-close>
           <svg className="modal__close--icon">
-            <use href="./images/icons.svg#icon-close"></use>
+            <use href="/images/icons.svg#icon-close"></use>
           </svg>
         </button>
         <p className="modal__title">Залиште свої дані, ми вам передзвонимо</p>
         <form className="modalform">
           <div className="formfield">
-            <label className="formfield__name" for="user-name">
+            <label className="formfield__name" htmlFor="user-name">
               Ім'я
             </label>
             <div className="formfield__wrap">
@@ -21,13 +21,13 @@ const ModalForm = () => {
                 id="user-name"
               />
               <svg className="formfield__icon" width="18" height="18">
-                <use href="./images/icons.svg#person-black"></use>
+                <use href="/images/icons.svg#person-black"></use>
               </svg>
             </div>
           </div>
 
           <div className="formfield">
-            <label className="formfield__name" for="user-tel">
+            <label className="formfield__name" htmlFor="user-tel">
               Телефон
             </label>
             <div className="formfield__wrap">
@@ -38,13 +38,13 @@ const ModalForm = () => {
                 id="user-tel"
               />
               <svg className="formfield__icon" width="18" height="18">
-                <use href="./images/icons.svg#phone-black"></use>
+                <use href="/images/icons.svg#phone-black"></use>
               </svg>
             </div>
           </div>
 
           <div className="formfield">
-            <label className="formfield__name" for="user-email">
+            <label className="formfield__name" htmlFor="user-email">
               Пошта
             </label>
             <div className="formfield__wrap">
@@ -55,13 +55,13 @@ const ModalForm = () => {
                 id="user-email"
               />
               <svg className="formfield__icon" width="18" height="18">
-                <use href="./images/icons.svg#email-black"></use>
+                <use href="/images/icons.svg#email-black"></use>
               </svg>
             </div>
           </div>
 
           <div className="formfield">
-            <label className="formfield__name" for="user-comment">
+            <label className="formfield__name" htmlFor="user-comment">
               Коментар
             </label>
             <textarea
@@ -79,10 +79,10 @@ const ModalForm = () => {
               className="formfield__checkbox visually-hidden"
               id="agreement"
             />
-            <label for="agreement" className="formfield__checktext">
+            <label htmlFor="agreement" className="formfield__checktext">
               <span className="formfield__checkdouble">
                 <svg className="formfield__checkicon" width="16" height="15">
-                  <use href="./images/icons.svg#icon-check"></use>
+                  <use href="/images/icons.svg#icon-check"></use>
                 </svg>
               </span>
               Погоджуюся з розсилкою та приймаю

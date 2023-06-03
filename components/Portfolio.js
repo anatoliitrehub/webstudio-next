@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Portfolio = () => {
   return (
     <>
@@ -35,7 +37,12 @@ const Portfolio = () => {
             <li className="examples__item">
               <a href="#" className="examples__link">
                 <div className="examples__topwrap">
-                  <img src="./images/img1w.jpg" alt="Технокряк" />
+                  <Image
+                    src="/images/img1w.jpg"
+                    alt="Технокряк"
+                    width="370"
+                    height="294"
+                  />
                   <p className="examples__toptext">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -53,9 +60,11 @@ const Portfolio = () => {
             <li className="examples__item">
               <a href="#" className="examples__link">
                 <div className="examples__topwrap">
-                  <img
-                    src="./images/img2w.jpg"
+                  <Image
+                    src="/images/img2w.jpg"
                     alt="Постер New Orlean vs Golden Star"
+                    width={370}
+                    height={294}
                   />
                   <p className="examples__toptext">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -76,7 +85,12 @@ const Portfolio = () => {
             <li className="examples__item">
               <a href="#" className="examples__link">
                 <div className="examples__topwrap">
-                  <img src="./images/img3w.jpg" alt="Ресторан Seafood" />
+                  <Image
+                    src="/images/img3w.jpg"
+                    alt="Ресторан Seafood"
+                    width={370}
+                    height={294}
+                  />
                   <p className="examples__toptext">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -94,7 +108,12 @@ const Portfolio = () => {
             <li className="examples__item">
               <a href="#" className="examples__link">
                 <div className="examples__topwrap">
-                  <img src="./images/img4w.jpg" alt="Проєкт Prime" />
+                  <Image
+                    src="/images/img4w.jpg"
+                    alt="Проєкт Prime"
+                    width={370}
+                    height={294}
+                  />
                   <p className="examples__toptext">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -112,7 +131,12 @@ const Portfolio = () => {
             <li className="examples__item">
               <a href="#" className="examples__link">
                 <div className="examples__topwrap">
-                  <img src="./images/img5w.jpg" alt="Проєкт Boxes" />
+                  <Image
+                    src="/images/img5w.jpg"
+                    alt="Проєкт Boxes"
+                    width={370}
+                    height={294}
+                  />
                   <p className="examples__toptext">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -130,9 +154,11 @@ const Portfolio = () => {
             <li className="examples__item">
               <a href="#" className="examples__link">
                 <div className="examples__topwrap">
-                  <img
-                    src="./images/img6w.jpg"
+                  <Image
+                    src="/images/img6w.jpg"
                     alt="Inspiration has no Borders"
+                    width={370}
+                    height={294}
                   />
                   <p className="examples__toptext">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -153,7 +179,12 @@ const Portfolio = () => {
             <li className="examples__item">
               <a href="#" className="examples__link">
                 <div className="examples__topwrap">
-                  <img src="./images/img7w.jpg" alt="Видання Limited Edition" />
+                  <Image
+                    src="/images/img7w.jpg"
+                    alt="Видання Limited Edition"
+                    width={370}
+                    height={294}
+                  />
                   <p className="examples__toptext">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -171,7 +202,12 @@ const Portfolio = () => {
             <li className="examples__item">
               <a href="#" className="examples__link">
                 <div className="examples__topwrap">
-                  <img src="./images/img8w.jpg" alt="Проєкт LAB" />
+                  <Image
+                    src="/images/img8w.jpg"
+                    alt="Проєкт LAB"
+                    width={370}
+                    height={294}
+                  />
                   <p className="examples__toptext">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -189,7 +225,12 @@ const Portfolio = () => {
             <li className="examples__item">
               <a href="#" className="examples__link">
                 <div className="examples__topwrap">
-                  <img src="./images/img9w.jpg" alt="Growing Business" />
+                  <Image
+                    src="/images/img9w.jpg"
+                    alt="Growing Business"
+                    width={370}
+                    height={294}
+                  />
                   <p className="examples__toptext">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу

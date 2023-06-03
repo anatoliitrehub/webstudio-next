@@ -1,7 +1,7 @@
 import Image from "next/image";
-import image1 from "../public/images/imgbox1.jpg";
-import image2 from "../public/images/imgbox2.jpg";
-import image3 from "../public/images/imgbox3.jpg";
+// import image1 from "../public/images/imgbox1.jpg";
+// import image2 from "../public/images/imgbox2.jpg";
+// import image3 from "../public/images/imgbox3.jpg";
 
 const Employments = () => {
   return (
@@ -11,7 +11,12 @@ const Employments = () => {
         <ul className="employments__list">
           <li className="employments__item">
             <div className="employments__skin">
-              <Image src={image1} alt="веб додатки" width={370} height={370} />
+              <Image
+                src="/images/imgbox1.jpg"
+                alt="веб додатки"
+                width="370"
+                height="294"
+              />
               <div className="employments__label">
                 <p className="employments__text">Десктопні додатки</p>
               </div>
@@ -20,10 +25,10 @@ const Employments = () => {
           <li className="employments__item">
             <div className="employments__skin">
               <Image
-                src={image2}
+                src="/images/imgbox2.jpg"
                 alt="мобільні додатки"
-                width={370}
-                height={370}
+                width="370"
+                height="294"
               />
               <div className="employments__label">
                 <p className="employments__text">Мобільні додатки</p>
@@ -33,10 +38,10 @@ const Employments = () => {
           <li className="employments__item">
             <div className="employments__skin">
               <Image
-                src={image3}
+                src="/images/imgbox3.jpg"
                 alt="дизайнерські рішення"
-                width={370}
-                height={370}
+                width="370"
+                height="294"
               />
               <div className="employments__label">
                 <p className="employments__text">Дизайнерські рішення</p>
