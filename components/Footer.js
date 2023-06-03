@@ -1,12 +1,14 @@
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__contacts container">
         <div className="footer__address">
-          <a href="./index.html" className="footer__logo">
+          <Link href="/" className="footer__logo">
             <span className="footer__logo--start">Web</span>
             <span className="footer__logo--end">Studio</span>
-          </a>
+          </Link>
 
           <address className="address">
             <ul className="address__list">
