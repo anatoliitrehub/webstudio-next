@@ -4,7 +4,7 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
-  output: "standalone",
+  output: "export",
   basePath: "/webstudio-next",
   images: {
     unoptimized: true,
